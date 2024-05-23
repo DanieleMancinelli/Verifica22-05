@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>Homepage</title>
+    </head>
+    <body>
+        {% for nazione in lista %}
+            <p><a href='/elencocitta/{{ nazione }}'>{{ nazione }}</a></p>
+        {% endfor %}
+    </body>
+</html>
