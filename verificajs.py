@@ -27,5 +27,16 @@ def get_customers():
     customers_info = df[df['City'] == city]
     return jsonify(customers_info.to_dict(orient='records'))
 
+@app.route('/add_customers', methods=['GET'])
+def add_customers():
+    
+    return 
+
+@app.route('/delete_customers', methods=['GET'])
+def delete_customers():
+    id = request.args.get('id')
+    df.drop(id, inplace=True)
+    return 
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=32457, debug=True)

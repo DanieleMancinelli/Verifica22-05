@@ -66,3 +66,8 @@ function loadCustomers(city) {
             }
         });
 }
+
+function addCustomers() {
+    fetch('/add_customers')
+}
+
